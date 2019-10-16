@@ -1,0 +1,16 @@
+.ajout_form{
+	text-align : center;
+	float : center;
+	background-color : #CCC;
+}
+
+.undisplayed{
+	display : none;
+}
+
+.media_container{
+	width:350px; 
+	height:450px; 
+	background-color:blue;
+}
+.media{}

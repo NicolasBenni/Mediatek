@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Mediatek</title>
+    <link rel="stylesheet" href="css/popup_form.css">
+    <link rel="stylesheet" href="css/button.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/popup_form.js"></script>
+    <script src="js/functions.js"></script>
+  </head>
+  <body>
+
+    <div class="media_container">
+      <div class="media movie"></div>
+    </div>
+
+    <button class="btn btn--stripe" id="contact">Ajouter média</button>
+
+    <div id="contactForm">
+      <h1>Ajouter un média</h1>
+        <select name="media" id="media_selector">
+          <option>Album</option>
+          <option>Movie</option>
+          <option>Game</option>
+        </select>
+        <input placeholder="Title" name="title" type="text" required />
+        <input placeholder="Release Date" name="release_date" type="date" required />
+        <input placeholder="Rating" name="rating" type="number" min="0" max="5" step=".5" required />
+        <input placeholder="Title" name="img" type="text" required />
+        <div class='inputs inputsAlbum'>
+          <input placeholder="Artists" name="artists" type="text" />
+          <input placeholder="Rating" name="rating" type="number" min="0" />
+        </div>
+        <div class='undisplayed inputs inputsGame'>
+          <input placeholder="Studio" name="studio" type="text" />
+          <input placeholder="Nb players" name="nbPlayers" type="number" min="1" />
+          <input placeholder="Plot" name="plot" type="text" />
+        </div>
+        <div class='undisplayed inputs inputsMovie'>
+          <input placeholder="Director" name="director" type="text" />
+          <input placeholder="Actors" name="actors" type="text" />
+          <input placeholder="Duration (in min)" name="duration" type="number" min="1" />
+          <input placeholder="Plot" name="plot" type="text" />
+        </div>
+        <button class="validateBtn">Include</button>
+    </div>
+
+
+  </body>
+</html>
